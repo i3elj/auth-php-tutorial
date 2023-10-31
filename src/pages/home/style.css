@@ -1,0 +1,26 @@
+#marketing {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 268px;
+}
+
+#signup_notice {
+	text-align: center;
+}
+
+#login_error {
+/*	text-align: center;*/
+	color: var(--red);
+	min-height: 25px;
+}
+
+@media screen and (max-width: 900px) {
+	main {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#marketing {
+		padding-bottom: 40px;
+	}
+}

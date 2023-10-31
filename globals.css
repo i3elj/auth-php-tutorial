@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Poppins;
+}
+
+:root {
+	--cyan: #145F5F;
+	--red: #ff7474;
+	--yellow: #d39a29;
+	--blue: #35a9fd;
+	--bg: var(--cyan);
+	--text: white;
+	--h1: white;
+	--h3: var(--red);
+	--link: var(--blue);
+}
+
+body {
+	background-color: var(--bg);
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 64px;
+	font-weight: normal;
+	color: var(--h1);
+}
+
+h3 {
+	font-size: 32px;
+	font-weight: normal;
+	color: var(--h3);
+}
+
+p,
+label,
+input {
+	color: var(--text);
+}
+
+a {
+	color: var(--link);
+}
+
+#form_wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+
+.input_field_wrapper {
+	display: flex;
+}
+
+label[for="id_input"] {
+	flex: 1;
+}
+
+label[for="password_input"] {
+	margin-right: 1rem;
+}
+
+input {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.input_field {
+	border: 1px solid white;
+	padding: 4px;
+}
+
+input[type="submit"] {
+	padding: 4px;
+	border: 1px solid var(--yellow);
+	color: var(--yellow);
+	transition: 300ms;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+	color: var(--cyan);
+	background-color: var(--yellow);
+}
+
+.error {
+	min-height: 25px;
+	color: var(--red);
+	text-align: center;
+}
